@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>About Us - She,He,We</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            margin: 0;
+            background: #fafbfc;
+            color: #222;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 48px 8px 48px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+        .navbar-logo img {
+            width: 28px;
+            height: 28px;
+        }
+        .navbar-brand {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        .navbar-brand-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .navbar-brand-subtitle {
+            font-size: 0.95rem;
+            color: #6b7280;
+            font-weight: 400;
+        }
+        .navbar-links a {
+            margin-left: 32px;
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-bottom 0.2s;
+        }
+        .navbar-links a.active,
+        .navbar-links a:hover {
+            color: #111c2b;
+            border-bottom: 2px solid #111c2b;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 64px 24px 80px 24px;
+            background: #f7f8fa;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+        .hero-desc {
+            font-size: 1.15rem;
+            margin-bottom: 36px;
+            color: #444;
+            max-width: 600px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+        .btn-primary {
+            background: #111c2b;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .btn-secondary {
+            background: #fff;
+            color: #222;
+            border: 1px solid #d1d5db;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .section-title, .section-desc {
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 56px 0 10px 0;
+        }
+        .section-desc {
+            color: #555;
+            margin-bottom: 36px;
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .stats-table-container {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            min-width: 700px;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 14px 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: 600;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #f0f0f0;
+        }
+        @media (max-width: 900px) {
+            table {
+                min-width: unset;
+                width: 95vw;
+            }
+        }
+    </style>
+    <style>
+        /* Meet Our Founder Section */
+        .founder-section {
+            background-color: #fff;
+            padding: 48px 24px 80px 24px;
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            color: #222;
+        }
+
+        .founder-text {
+            flex: 1 1 480px;
+            min-width: 300px;
+        }
+        .founder-text h2 {
+            font-weight: 600;
+            font-size: 1.6rem;
+            margin-bottom: 6px;
+            color: #111c2b;
+        }
+        .founder-text h3 {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-top: 0;
+            margin-bottom: 24px;
+            color: #555;
+        }
+        .founder-text p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 1.2em;
+        }
+
+        /* Founder Image */
+        .founder-image {
+            flex: 0 0 180px;
+            min-width: 160px;
+            max-width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .founder-image img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 720px) {
+            .founder-section {
+                flex-direction: column;
+                padding-bottom: 48px;
+            }
+            .founder-image {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="primary navigation">
+        <div class="navbar-logo">
+            <img src="https://img.icons8.com/ios-filled/50/000000/scales.png" alt="EqualityFirst Logo" />
+            <div>
+                She-He-We!<br />
+                <span class="navbar-subtitle">Advocating for Gender Equality</span>
+            </div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="#">Advocacy</a>
+            <a href="#">Resources</a>
+        </div>
+    </nav>
+
+    <!-- Our Story Section -->
+    <section class="section" aria-labelledby="our-story-title">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Our Story</h2>
+            <p style="text-align: justify; margin: 10px 355px;"> She-He-We began in 2025 when a group of passionate advocates saw ongoing gender inequalities in their communities. Their informal conversations as friends from different fields, such as education and business, soon grew into a formal organization. The founders, who came from law, social work, business, and academia, shared a vision to create real change and ensure equal opportunities for everyone, regardless of gender.</p>
+
+
+            <p style="text-align: justify; margin: 10px 355px;"> We started with small community workshops and have grown into an advocacy platform that now helps shape policy at many levels. Gender equality matters to everyone, not just women. By focusing on research, working with communities, and building partnerships, we have helped change policies in more than 15 countries and improved the lives of thousands. We bring together local activism and policy work so that people most affected by gender inequality have a say in important decisions.</p>
+        </div>
+    </section>
+
+    <!-- Meet Our Founder Section -->
+    <section aria-labelledby="founder-title" class="founder-section">
+        <div class="founder-image">
+            <img src="media/Profile_Red.png" alt="Dr. Yeshua Lumanlan" />
+        </div>
+        <div class="founder-text">
+            <h2 id="founder-title">Meet Our Founder</h2>
+            <h3>Yeshua Red O. Lumanlan<br /><small>Founder & Executive Director</small></h3>
+            <p>Yeshua Red O. Lumanlan brings over 15 years (my whole life) of experience in international development and gender advocacy to She-He-We. With a PhD in Social Policy from Oxford University
+                and extensive fieldwork across Asia, Africa, and Latin America, she has dedicated her career to understanding and addressing the root causes of gender inequality.</p>
+            <p> Before founding She-He-We, Yeshua worked with the United Nations
+                Development Programme, participated in international MUNs and served as a senior policy advisor to several governments on gender mainstreaming initiatives. Her research on economic empowerment of
+                women has been published in leading academic journals, and she frequently speaks at international conferences on gender equality and sustainable development. Yeshua’s
+                multilingual abilities and cross-cultural expertise have been instrumental in building She-He-We’s global network of partners and advocates. (None of these information are real.)</p>
+        </div>
+    </section>
+    <section aria-labelledby="recommended-resources-title" style="padding: 2rem 0;">
+        <h2 id="recommended-resources-title" style="text-align: center; margin-bottom: 1.5rem;">Recommended Resources</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+            <article style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; width: 300px; box-sizing: border-box;">
+        <div style="background: #f0f0f0; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+        <span>🌐</span>
+        </div>
+      <h3>UN Women</h3>
+      <p>The United Nations entity dedicated to gender equality and the empowerment of women.</p>
+      <a href="https://www.unwomen.org/" aria-label="Visit UN Women site">Visit Site →</a>
+    </article>
+    
+    <article style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; width: 300px; box-sizing: border-box;">
+      <div style="background: #f0f0f0; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+        <span>📈</span>
+      </div>
+      <h3>Catalyst</h3>
+      <p>Global nonprofit working with CEOs and senior executives to build workplaces that work for women.</p>
+      <a href="https://www.catalyst.org/" aria-label="Visit Catalyst site">Visit Site →</a>
+    </article>
+    
+    <article style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; width: 300px; box-sizing: border-box;">
+      <div style="background: #f0f0f0; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+        <span>🎓</span>
+      </div>
+      <h3>Malala Fund</h3>
+      <p>Advocating for every girl's right to 12 years of free, safe, quality education.</p>
+      <a href="https://malala.org/" aria-label="Visit Malala Fund site">Visit Site →</a>
+    </article>
+
+    <article style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; width: 300px; box-sizing: border-box;">
+      <div style="background: #f0f0f0; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+        <span>💼</span>
+      </div>
+      <h3>Lean In</h3>
+      <p>Supporting women achieving their ambitions and working to create an equal world.</p>
+      <a href="https://leanin.org/" aria-label="Visit Lean In site">Visit Site →</a>
+    </article>
+
+    <article style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; width: 300px; box-sizing: border-box;">
+      <div style="background: #f0f0f0; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+        <span>❤️</span>
+      </div>
+      <h3>Plan International</h3>
+      <p>Working to advance children’s rights and equality for girls worldwide.</p>
+      <a href="https://plan-international.org/" aria-label="Visit Plan International site">Visit Site →</a>
+    </article>
+
+    <article style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; width: 300px; box-sizing: border-box;">
+      <div style="background: #f0f0f0; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;">
+        <span>👥</span>
+      </div>
+      <h3>HeForShe</h3>
+      <p>UN Women solidarity movement engaging men and boys as advocates for gender equality.</p>
+      <a href="https://www.heforshe.org/" aria-label="Visit HeForShe site">Visit Site →</a>
+    </article>
+
+  </div>
+</section>
+
+</section>
+
+</body>
+</html>

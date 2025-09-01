@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>She-He-We!</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            margin: 0;
+            background: #fafbfc;
+            color: #222;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 48px 8px 48px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+        .navbar-logo img {
+            width: 28px;
+            height: 28px;
+        }
+        .navbar-brand {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+        .navbar-brand-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .navbar-brand-subtitle {
+            font-size: 0.95rem;
+            color: #6b7280;
+            font-weight: 400;
+        }
+        .navbar-links a {
+            margin-left: 32px;
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-bottom 0.2s;
+        }
+        .navbar-links a.active,
+        .navbar-links a:hover {
+            color: #111c2b;
+            border-bottom: 2px solid #111c2b;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 64px 24px 80px 24px;
+            background: #f7f8fa;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+        .hero-desc {
+            font-size: 1.15rem;
+            margin-bottom: 36px;
+            color: #444;
+            max-width: 600px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+        .btn-primary {
+            background: #111c2b;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .btn-secondary {
+            background: #fff;
+            color: #222;
+            border: 1px solid #d1d5db;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .section-title, .section-desc {
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 56px 0 10px 0;
+        }
+        .section-desc {
+            color: #555;
+            margin-bottom: 36px;
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .stats-table-container {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            min-width: 700px;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 14px 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: 600;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #f0f0f0;
+        }
+        @media (max-width: 900px) {
+            table {
+                min-width: unset;
+                width: 95vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="https://img.icons8.com/ios-filled/50/000000/scales.png" />
+            <div class="navbar-brand">
+                <span class="navbar-brand-title">She-He-We!</span>
+                <span class="navbar-brand-subtitle">Advocating for Gender Equality</span>
+            </div>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="#">Advocacy</a>
+            <a href="#">Resources</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-title">She, He, We</div>
+        <div class="hero-desc">
+            Join us in creating a world where everyone has equal opportunities, rights, and representation regardless of gender.
+        </div>
+        <div class="hero-buttons">
+            <button class="btn-primary">Take Action</button>
+            <button class="btn-secondary">Learn More</button>
+        </div>
+    </section>
+
+    <div class="section-title">The Reality of Gender Inequality</div>
+    <div class="section-desc">
+        <p> Globally, women face persistent disadvantages in education, economic rights, and safety: they make up most of the illiterate population, rural girls have the lowest school attendance, and women hold less than 20% of land. Education proves transformative—raising incomes, delaying marriage, and reducing violence—yet barriers like stigma, lack of services, and systemic obstacles hinder women’s protection and independence, highlighting the need for policies that expand access, resources, and safety.</p>
+    </div>
+    <div class="stats-table-container" style="margin: 56px auto 72px auto; padding: 0 24px;">
+        <table style="margin: 0 auto; width: 100%; max-width: 900px;">
+            <thead>
+                <tr>
+                    <th>Dimension</th>
+                    <th>Key Statistics (2012)</th>
+                    <th>Insight/Implications</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Illiteracy</td>
+                    <td>Women make up more than two-thirds of the world's 796 million illiterate people.</td>
+                    <td>Literacy efforts must prioritize women—addressing a core barrier to empowerment, voice, and economic opportunity.</td>
+                </tr>
+                <tr>
+                    <td>Secondary School Access (Rural)</td>
+                    <td>Only 39% of rural girls attend secondary school (versus rural boys 45%, urban girls 59%, urban boys 60%).</td>
+                    <td>Girls—especially in rural areas—are significantly disadvantaged educationally compared to boys and urban peers.</td>
+                </tr>
+                <tr>
+                    <td>Agricultural Land Ownership</td>
+                    <td>Less than 20% of global landholders are women; under 5% in North Africa &amp; West Asia, about 15% in sub-Saharan Africa.</td>
+                    <td>Women’s limited land rights restrict their economic autonomy, productivity, and resilience.</td>
+                </tr>
+                <tr>
+                    <td>Domestic Violence (Rural)</td>
+                    <td>In Peru, under 5% of rural survivors of domestic violence (60% of rural women) sought help, compared to approx. 16% among urban women (49%).</td>
+                    <td>Rural women face greater barriers to accessing support and services for abuse.</td>
+                </tr>
+                <tr>
+                    <td>Long-term Benefits of Education</td>
+                    <td>Each extra year of primary schooling increases girls’ eventual wages by 10–20%, delays marriage, lowers fertility, and reduces vulnerability to violence.</td>
+                    <td>Investing in girls’ primary education yields broad social, economic, and health dividends.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- End of stats-table-container -->
+
+    <!-- Global Initiatives Section -->
+    <div style="background:#f7f8fa; padding:56px 0 0 0;">
+        <div style="text-align:center;">
+            <div style="font-size:2rem; font-weight:500; margin-bottom:10px;">Global Initiatives</div>
+            <div style="color:#555; margin-bottom:36px; font-size:1.05rem;">
+                Organizations worldwide are taking action to advance gender equality through various programs and policies.
+            </div>
+        </div>
+        <div style="display:flex; justify-content:center; gap:32px; flex-wrap:wrap; margin-bottom:56px;">
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:28px 24px; width:300px; min-width:240px; box-sizing:border-box;">
+                <div style="font-size:2rem; margin-bottom:12px;"><span style="vertical-align:middle;">🌐</span></div>
+                <div style="font-weight:600; margin-bottom:8px;">UN Women</div>
+                <div style="color:#555; font-size:0.98rem;">
+                    Leading global efforts to empower women and achieve gender equality through policy advocacy and programs.
+                </div>
+            </div>
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:28px 24px; width:300px; min-width:240px; box-sizing:border-box;">
+                <div style="font-size:2rem; margin-bottom:12px;"><span style="vertical-align:middle;">💼</span></div>
+                <div style="font-weight:600; margin-bottom:8px;">Corporate Initiatives</div>
+                <div style="color:#555; font-size:0.98rem;">
+                    Companies implementing diversity programs, equal pay policies, and leadership development for women.
+                </div>
+            </div>
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:28px 24px; width:300px; min-width:240px; box-sizing:border-box;">
+                <div style="font-size:2rem; margin-bottom:12px;"><span style="vertical-align:middle;">🎓</span></div>
+                <div style="font-weight:600; margin-bottom:8px;">Educational Programs</div>
+                <div style="color:#555; font-size:0.98rem;">
+                    Initiatives focused on increasing girls' access to education and STEM fields worldwide.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Where We Come In Section -->
+    <div style="background:#fafbfc; padding:56px 0 80px 0;">
+        <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; max-width:1200px; margin:0 auto;">
+            <div style="flex:1 1 380px; min-width:320px; max-width:500px;">
+                <div style="font-size:1.5rem; font-weight:500; margin-bottom:16px;">Where We Come In</div>
+                <div style="color:#555; margin-bottom:24px;">
+                    She-He-We bridges the gap between global initiatives and local action, creating sustainable change in communities worldwide.
+                </div>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li style="margin-bottom:18px;">
+                        <span style="color:#111c2b; font-size:1.2rem; vertical-align:middle;">✔️</span>
+                        <span style="font-weight:600;"> Community Advocacy</span><br>
+                        <span style="color:#555; font-size:0.98rem; margin-left:28px;">
+                            Grassroots campaigns that address local gender equality challenges.
+                        </span>
+                    </li>
+                    <li style="margin-bottom:18px;">
+                        <span style="color:#111c2b; font-size:1.2rem; vertical-align:middle;">✔️</span>
+                        <span style="font-weight:600;"> Policy Research</span><br>
+                        <span style="color:#555; font-size:0.98rem; margin-left:28px;">
+                            Evidence-based research to inform policy decisions and advocacy strategies.
+                        </span>
+                    </li>
+                    <li>
+                        <span style="color:#111c2b; font-size:1.2rem; vertical-align:middle;">✔️</span>
+                        <span style="font-weight:600;"> Education & Training</span><br>
+                        <span style="color:#555; font-size:0.98rem; margin-left:28px;">
+                            Workshops and programs that build awareness and skills for gender equality.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div style="flex:1 1 340px; min-width:280px; max-width:480px; display:flex; align-items:center; justify-content:center;">
+                <div style="background:#495162; color:#fff; border-radius:10px; width:100%; min-height:220px; display:flex; align-items:center; justify-content:center; font-size:1.15rem; font-weight:500; text-align:center;">
+                    <img src="/media/Advocacy Meeting.png" style="max-width:100%; max-height:220px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Impact in Action Section -->
+    <div style="background:#fafbfc; padding:56px 0 0 0;">
+        <div style="text-align:center; font-size:2rem; font-weight:500; margin-bottom:36px;">
+            Our Impact in Action
+        </div>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:32px; max-width:950px; margin:0 auto 56px auto;">
+            <div style="background:#495162; color:#fff; border-radius:10px; width:280px; height:150px; display:flex; align-items:center; justify-content:center; font-size:1.08rem; font-weight:500; text-align:center;">
+                Women's Rights March
+            </div>
+            <div style="background:#495162; color:#fff; border-radius:10px; width:280px; height:150px; display:flex; align-items:center; justify-content:center; font-size:1.08rem; font-weight:500; text-align:center;">
+                Leadership Workshop
+            </div>
+            <div style="background:#495162; color:#fff; border-radius:10px; width:280px; height:150px; display:flex; align-items:center; justify-content:center; font-size:1.08rem; font-weight:500; text-align:center;">
+                Policy Discussion Panel
+            </div>
+            <div style="background:#495162; color:#fff; border-radius:10px; width:280px; height:150px; display:flex; align-items:center; justify-content:center; font-size:1.08rem; font-weight:500; text-align:center;">
+                Community Outreach
+            </div>
+            <div style="background:#495162; color:#fff; border-radius:10px; width:280px; height:150px; display:flex; align-items:center; justify-content:center; font-size:1.08rem; font-weight:500; text-align:center;">
+                Educational Campaign
+            </div>
+            <div style="background:#495162; color:#fff; border-radius:10px; width:280px; height:150px; display:flex; align-items:center; justify-content:center; font-size:1.08rem; font-weight:500; text-align:center;">
+                Gender Equality Forum
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Us Section -->
+    <div style="background:#111c2b; color:#fff; padding:56px 24px 0 24px;">
+        <div style="max-width:900px; margin:0 auto; text-align:center;">
+            <div style="font-size:2rem; font-weight:700; margin-bottom:18px; letter-spacing:0.5px;">
+                JOIN THE MOVEMENT
+            </div>
+            <div style="font-size:1.08rem; color:#e5e7eb; margin-bottom:36px; max-width:600px; margin-left:auto; margin-right:auto;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus fringilla tortor, id sollicitudin neque semper et.
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin-bottom:48px;">
+                <a href="get-involved.html" class="btn-secondary" style="min-width:180px; border:2px solid #fff; color:#fff; background:transparent; font-weight:600; font-size:1rem; text-decoration:none; display:inline-block; text-align:center; padding:10px 24px;">
+                    GET INVOLVED
+                </a>
+                <a href="donate.html" class="btn-secondary" style="min-width:180px; border:2px solid #fff; color:#fff; background:transparent; font-weight:600; font-size:1rem; text-decoration:none; display:inline-block; text-align:center; padding:10px 24px;">
+                    DONATE NOW
+                </a>
+                <a href="subscribe.html" class="btn-secondary" style="min-width:220px; border:2px solid #fff; color:#fff; background:transparent; font-weight:600; font-size:1rem; text-decoration:none; display:inline-block; text-align:center; padding:10px 24px;">
+                    SUBSCRIBE TO UPDATES
+                </a>
+            </div>
+        </div>
+        <hr style="border: none; border-top: 2px solid #fff; margin: 0 0 0 0;">
+        <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; max-width:1100px; margin:32px auto 0 auto; padding-bottom:24px;">
+            <!-- Left: Logo and tagline -->
+            <div style="flex:1 1 220px; min-width:200px; display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <div style="background:#495162; width:48px; height:48px; display:flex; align-items:center; justify-content:center; border-radius:6px;">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/scales.png" alt="Logo" style="width:32px; height:32px;">
+                    </div>
+                    <div>
+                        <div style="font-weight:700; font-size:1.08rem; letter-spacing:0.5px;">SHE-HE-WE!</div>
+                        <div style="font-size:0.95rem; color:#e5e7eb; font-weight:400;">
+                            Advocating for gender equality<br>and empowering communities worldwide.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Center: Share bar -->
+            <div style="flex:2 1 320px; min-width:220px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+                <div style="font-weight:600; margin-bottom:6px; color:#e5e7eb;">SHARE:</div>
+                <div style="background:#495162; height:18px; width:100%; max-width:320px; border-radius:4px;">
+                    <a href="#" style="color:#e5e7eb">Copy & Paste Link</a>
+                </div>
+            </div>
+            <!-- Right: Connect and Resources -->
+            <div style="flex:1 1 220px; min-width:200px; display:flex; gap:36px; justify-content:flex-end;">
+                <div>
+                    <div style="font-weight:600; margin-bottom:6px; color:#e5e7eb;">CONNECT</div>
+                    <div style="font-size:0.98rem; color:#e5e7eb;">
+                        <a href="https://instagram.com" target="_blank" style="color:#e5e7eb; text-decoration:none;">• Instagram</a><br>
+                        <a href="https://facebook.com" target="_blank" style="color:#e5e7eb; text-decoration:none;">• Facebook</a><br>
+                        <a href="https://linkedin.com" target="_blank" style="color:#e5e7eb; text-decoration:none;">• LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <div style="font-weight:600; margin-bottom:6px; color:#e5e7eb;">RESOURCES</div>
+                    <div style="font-size:0.98rem; color:#e5e7eb;">
+                        <a href="research.html" style="color:#e5e7eb; text-decoration:none;">• Research</a><br>
+                        <a href="#" style="color:#e5e7eb; text-decoration:none;">• Lorem Ipsum</a><br>
+                        <a href="news.html" style="color:#e5e7eb; text-decoration:none;">• News</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
